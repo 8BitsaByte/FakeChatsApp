@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CreateFakeScreenshotMainRL"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/CreateFakeScreenshotScreenshotPortionRL">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/facebookUserTextBackground"
+                android:id="@+id/CreateFakeScreenshotsTopBar"
+                >
+
+                <ImageButton
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/fbchat_backbutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/CreateFakeScreenShotsBackButton"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/fbchat_statsbutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/CreateFakeScreenShotsStatsButton"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/fbchat_videobutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/CreateFakeScreenShotsVideoButton"
+                    android:layout_toLeftOf="@+id/CreateFakeScreenShotsStatsButton"
+                    android:background="@null"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/fbchat_phonebutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/CreateFakeScreenShotsCallButton"
+                    android:layout_toLeftOf="@+id/CreateFakeScreenShotsVideoButton"
+                    android:background="@null"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/CreateFakeScreenShotsBackButton"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@id/CreateFakeScreenShotsCallButton">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CreateFakeScreenShotsUsernameTextView"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active Now"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp"/>
+                </LinearLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/CreateFakeScreenshotsFooterBar"
+                android:background="#FFFFFF"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/fbchat_addbutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/CreateFakeScreenShotsAddButton"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/fbchat_camerabutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/CreateFakeScreenShotsCameraButton"
+                    android:layout_toRightOf="@id/CreateFakeScreenShotsAddButton"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/fbchat_gallerybutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:id="@+id/CreateFakeScreenShotsGalleryButton"
+                    android:layout_toRightOf="@id/CreateFakeScreenShotsCameraButton"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/fbchat_microphonebutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27dp"
+                    android:id="@+id/CreateFakeScreenShotsMichrophoneButton"
+                    android:layout_toRightOf="@id/CreateFakeScreenShotsGalleryButton"/>
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/fbchat_thumbsupbutton"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/CreateFakeScreenShotsThumbsupButton"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fbchat_roundedtextview"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/CreateFakeScreenShotsMichrophoneButton"
+                    android:layout_toLeftOf="@id/CreateFakeScreenShotsThumbsupButton"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="Aa"
+                        android:textColor="#A8A8A8"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/fbchat_smilebutton"
+                        android:scaleType="fitXY"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/CreateFakeScreenshotsFooterBar"
+                android:background="#ccc"
+                android:id="@+id/divider"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/divider"
+                android:layout_below="@+id/CreateFakeScreenshotsTopBar"
+                android:background="#FAFAFA">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CreateFakeScreenshotsRecyclerView"
+                android:background="@null"
+                android:paddingBottom="3dp"
+                android:layout_alignParentBottom="true"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_above="@+id/CreateFakeScreenshotsTakeScreenShotMainRL"
+            android:id="@+id/CreateFakeScreenShotsResizeFooter"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="#AC000000"
+            android:id="@+id/CreateFakeScreenshotsTakeScreenShotMainRL">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="55dp"
+                android:id="@+id/CreateFakeScreenshotsTakeScreenShotLL"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/camera_white"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Screenshot"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/home_white"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:background="@null"
+                android:id="@+id/CreateFakeScreenshotsHome"/>
+            </LinearLayout>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:id="@+id/CreateFakeScreenshotsScreenshotsDisplay"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:src="@drawable/hideeye_white"
+                android:scaleType="centerCrop"
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/CreateFakeScreenshotsResizeFooterImageButton"
+                />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+<FrameLayout
+    android:id="@+id/pnlFlash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayShade"
+    android:visibility="gone"
+    />
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FakeChatSingleMessageUserMessageRL"
+        android:visibility="gone"
+        android:background="@null"
+        android:layout_marginLeft="15dp"
+        >
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:id="@+id/FakeChatSingleMessageUserMessageSwipeButton"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dualarrow_gray"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/FakeChatSingleMessageUserMessageDeleteButton"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/FakeChatSingleMessageUserMessageSwipeButton"
+            android:src="@drawable/trashcan_gray"
+            android:scaleType="fitXY"
+            android:padding="8dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FakeChatSingleMessageUserMessage"
+            android:background="@drawable/user_roundedtextview_alone"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/FakeChatSingleMessageUserMessageDeleteButton"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FakeChatSingleMessageFriendMessageRL"
+        android:visibility="gone"
+        android:background="@null"
+        android:layout_marginRight="15dp"
+        >
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/FakeChatSingleMessageFriendMessageSwipeButton"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:src="@drawable/dualarrow_gray"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/FakeChatSingleMessageFriendMessageDeleteButton"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/FakeChatSingleMessageFriendMessageSwipeButton"
+            android:src="@drawable/trashcan_gray"
+            android:scaleType="fitXY"
+            android:padding="8dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:id="@+id/FakeChatSingleMessageFriendPicture"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/FakeChatSingleMessageFriendMessageDeleteButton"
+            android:padding="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FakeChatSingleMessageFriendMessage"
+            android:background="@drawable/friend_roundedtextview_alone"
+            android:textColor="#121212"
+            android:padding="10dp"
+            android:layout_toRightOf="@+id/FakeChatSingleMessageFriendPicture"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
